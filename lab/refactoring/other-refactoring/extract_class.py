@@ -1,5 +1,32 @@
 # by Kami Bigdely
 # Extract Class
+
+class Food:
+    def __init__(self, name, prep_time, is_veggie, food_type, cuisine, ingredients, recipe):
+        self.name = name
+        self.prep_time = prep_time
+        self.is_veggie = is_veggie
+        self.food_type = food_type
+        self.cuisine = cuisine
+        self.ingredients = ingredients
+        self.recipe = recipe
+
+class Ingredients:
+    def __init__(self, ingredients=[]):
+        self.ingredients = ingredients
+    
+    def add_ingredient(self, new_ingredient):
+        self.ingredients.append(new_ingredient)
+
+class Recipe:
+    def __init__(self):
+        self.directions = []
+        self.current_step = 0
+    
+    def add_direction(self, direction):
+        self.directions.append(direction)
+        self.current_step += 1
+
 foods = {'butternut squash soup':[45, True, 'soup','North African',\
      ['butter squash','onion','carrot', 'garlic','butter','black pepper', 'cinnamon','coconut milk']\
         ,'1. Grill the butter squash, onion, carrot and garlic in the oven until'
