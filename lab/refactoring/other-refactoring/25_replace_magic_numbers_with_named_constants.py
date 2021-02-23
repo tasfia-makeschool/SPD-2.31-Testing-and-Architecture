@@ -1,5 +1,5 @@
 # by Kami Bigdely 
-# Replace magic numbers with named constanst
+# Replace magic numbers with named constant
 
 # First Section
 # Given two point charges, calcualte the electric force exerted on them.
